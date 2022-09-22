@@ -20,8 +20,8 @@ namespace Regexs
             Console.WriteLine("Enter the Email ID");
             string EmailID = Console.ReadLine();
 
-            //Console.WriteLine("Enter the Mobile Number");
-            //string MobileNo = Console.ReadLine();
+            Console.WriteLine("Enter the Mobile Number");
+            string MobileNo = Console.ReadLine();
 
             Console.WriteLine("Enter the Password");
             string Password = Console.ReadLine();
@@ -50,11 +50,11 @@ namespace Regexs
                 Console.WriteLine("Email Id is Not Valide Email should like (E.g. abc.xyz@bl.co.in)");
 
             //UC4 Mobile ID
-            //bool val3 = patterns.ValideMobileNo(MobileNo);
-            //if (val3)
+            bool val3 = patterns.ValideMobileNo(MobileNo);
+            if (val3)
                 Console.WriteLine("Mobile no is Valide");
-            //else
-            //   Console.WriteLine("Mobile Num is Not Valide Mobile Nun should like (E.g. 91 9919819801)");
+            else
+               Console.WriteLine("Mobile Num is Not Valide Mobile Nun should like (E.g. 91 9919819801)");
 
             //UC5 Password
             bool val4 = patterns.ValidePassword(Password);
