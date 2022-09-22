@@ -12,6 +12,8 @@ namespace Regexs
         public static string REGEX_FIRSTNAME = "^[A-Z]{1}[a-z]{2,}$";
         public static string REGEX_LASTNAME = "^[A-Z]{1}[a-z]{2,}$";
         public static string REGEX_EMAILID = "^[a-zA-Z0-9]([._+-]{0,1}[a-zA-Z0-9])*[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]{1}[a-zA-Z]{2,3}){0,1}$";
+        //public static string REGEX_MOBILENO = "/^(\\+\\d{1,3}[- ]?)?\\d{10}$/";
+        public static string REGEX_PASSWORD = "^[0-9]{8,}$";
 
         //UC1 FIRST NAME
         public bool ValidetFirstName(string FirstName)
@@ -31,5 +33,16 @@ namespace Regexs
             return Regex.IsMatch(EmailId, REGEX_EMAILID);
         }
 
+        //UC4 Mobile Num
+        //public bool ValideMobileNo(string MobileNo)
+        //{
+        //  return Regex.IsMatch(MobileNo, REGEX_EMAILID);
+        //}
+
+        //UC5 Password
+        public bool ValidePassword(string Password)
+        {
+            return Regex.IsMatch(Password, REGEX_PASSWORD);
+        }
     }
 }
