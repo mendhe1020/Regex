@@ -61,7 +61,7 @@ namespace Regexs
             if (val4)
                 Console.WriteLine("Password is Valide");
             else
-                Console.WriteLine("Password is Not Valide Password should like (Should have 1 numeric number add minimum 8 Characters)");
+                Console.WriteLine("Password is Not Valide Password should like (Should have 1 numeric number, 1 Special Character, 1 Upper case add minimum 8 Characters)");
         }
     }
 }
