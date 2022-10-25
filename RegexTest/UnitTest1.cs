@@ -9,16 +9,9 @@ namespace RegexTest
         [TestMethod]
         public void CheckFirstNameValidation()
         {
-            try
-            {
-                Patterns patterns = new Patterns();
-                string FirstName = Console.ReadLine();
-                Assert.IsTrue(patterns.ValidLastName(FirstName));
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Patterns patterns = new Patterns();
+            string FirstName = "Anurag";
+            Assert.IsTrue(patterns.ValidLastName(FirstName));
         }
 
         [TestMethod]
@@ -34,6 +27,15 @@ namespace RegexTest
         {
             Patterns patterns = new Patterns();
             string Email = "anurag.mendhe14@gmail.com";
+            Assert.IsTrue(patterns.ValideEmailID(Email));;
+        }
+
+
+        [TestMethod]
+        public void Emailvalidation1()
+        {
+            Patterns patterns = new Patterns();
+            string Email = "aurag.mendhe14@gmail.com";
             Assert.IsTrue(patterns.ValideEmailID(Email));
         }
 
