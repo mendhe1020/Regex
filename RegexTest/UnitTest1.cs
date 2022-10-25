@@ -9,9 +9,16 @@ namespace RegexTest
         [TestMethod]
         public void CheckFirstNameValidation()
         {
-            Patterns patterns = new Patterns();
-            string FirstName = "Anurag";
-            Assert.IsTrue(patterns.ValidLastName(FirstName));
+            try
+            {
+                Patterns patterns = new Patterns();
+                string FirstName = Console.ReadLine();
+                Assert.IsTrue(patterns.ValidLastName(FirstName));
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         [TestMethod]
