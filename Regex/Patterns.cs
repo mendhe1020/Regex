@@ -16,34 +16,39 @@ namespace Regexs
         public static string REGEX_PASSWORD = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$^&+=?!])[0-9a-zA-Z@#$^&+=?!]{8,}$";
 
         //UC1 FIRST NAME
-        public bool ValidetFirstName(string FirstName)
-        {
-            return Regex.IsMatch(FirstName, REGEX_FIRSTNAME);
-        }
+
+        public bool ValidetFirstName(string FirsstName)=>(Regex.IsMatch(FirsstName, REGEX_FIRSTNAME));
+        ////public bool ValidetFirstName(string FirstName)
+        ////{
+        ////    return Regex.IsMatch(FirstName, REGEX_FIRSTNAME);
+        ////}
 
         //UC2 LAST NAME
-        public bool ValidLastName(string LasttName)
-        {
-            return Regex.IsMatch(LasttName, REGEX_LASTNAME);
-        }
+        public bool ValidLastName(string LastName)=>(Regex.IsMatch(LastName, REGEX_LASTNAME));
+        //public bool ValidLastName(string LastName)
+        //{
+        //    return Regex.IsMatch(LastName, REGEX_LASTNAME);
+        //}
 
         //UC3 Email ID
-        public bool ValideEmailID(string EmailId)
-        {
-            return Regex.IsMatch(EmailId, REGEX_EMAILID);
-        }
+        public bool ValideEmailID(string EmailID)=>(Regex.IsMatch(EmailID, REGEX_EMAILID));
+        //public bool ValideEmailID(string EmailId)
+        //{
+        //    return Regex.IsMatch(EmailId, REGEX_EMAILID);
+        //}
 
         //UC4 Mobile Num
-        public bool ValideMobileNo(string MobileNo)
-        {
-          return Regex.IsMatch(MobileNo, REGEX_MOBILENO);
-        }
+        public bool ValideMobileNo(string Mobile) => (Regex.IsMatch(Mobile, REGEX_MOBILENO));
+        //public bool ValideMobileNo(string MobileNo)
+        //{
+        //  return Regex.IsMatch(MobileNo, REGEX_MOBILENO);
+        //}
 
         //UC5 Password
-        public bool ValidePassword(string Password)
-        {
-            return Regex.IsMatch(Password, REGEX_PASSWORD);
-        }
-
+        public bool ValidePassword(string Password) => (Regex.IsMatch(Password, REGEX_PASSWORD));
+        //public bool ValidePassword(string Password)
+        //{
+        //    return Regex.IsMatch(Password, REGEX_PASSWORD);
+        //}
     }
 }
